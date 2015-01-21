@@ -12,7 +12,7 @@
  5. Mag: indicates if the signal was calculated using the Euclidean norm.             
  6. X,Y or Z:  indicates the direction of the signal
  7. mean, std or meanFreq: mean/standard deviation of the signals measured or the mean frequency of the type of          acceleration measurement
-    - the types of measurements recorded are listed below:
+    the types of measurements recorded are listed below:
     - tBodyAcc-mean()-X
     - tBodyAcc-mean()-Y
     - tBodyAcc-mean()-Z
