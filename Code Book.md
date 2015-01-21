@@ -1,10 +1,10 @@
 ##Code book
 - activity: What the person was doing at the time of acceleration measurement.  
-            Activity is one of six choices:WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+            One of six choices:WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - subject:  The person that was wearing the smartphone at the time of the measurment.  
             Each person is labled from 1 to 30.
 - type:     The group that the volunteer was assigned to.  Test or Train group.
-- variable: The type of acceleration measured: 
+- variable: The type of acceleration recoreded.  Measured in standard gravity units 'g'.
     - tBodyAcc-mean()-X
     - tBodyAcc-mean()-Y
     - tBodyAcc-mean()-Z
