@@ -1,6 +1,6 @@
 # Getting_and_Cleaning_Data
 
-#What the script does:
+##What the script does:
 The file run_analysis.R is an R script used to do the following:
 1.  Merges the training and the test sets to create one data set.
 2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -9,7 +9,7 @@ The file run_analysis.R is an R script used to do the following:
 5.  From the data set in step 4, creates a second, independent tidy data set with the average 
     of each variable for each activity and each subject.
 
-#About the data and code book:
+##About the data and code book:
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we 
@@ -26,8 +26,8 @@ and training groups.  The variable name and definitions are as follows:
            1 to 30.
 - type:      The group that the volunteer was assigned to.  Test or Train group.
 - variable:  The type of acceleration measured: 
-                  - tBodyAcc-mean()-X
-                  - tBodyAcc-mean()-Y
+    - tBodyAcc-mean()-X
+    - tBodyAcc-mean()-Y
                   - tBodyAcc-mean()-Z
                   - tBodyAcc-std()-X
                   - tBodyAcc-std()-Y
