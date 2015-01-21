@@ -5,13 +5,13 @@
             Each person is labled from 1 to 30.
 - type:     The group that the volunteer was assigned to.  Test or Train group.
 - variable: The type of acceleration recorded.  The variable can have up to 7 parts to describe the specific measurement.  
-  1. t or f:  time(t) or fequency(f) domain signals
-  2. Body or Gravity:  Body or Gravity acceleration
-  3. Acc or Gyro:  indicates if the signal is linear(Acc, measured in standard gravity units                                            'g') or angular acceleration(Gyro, measaured in radians/second).
-  4. Jerk: indicates if linerar acceleration and angular velocity were derived in time to                                       obtain Jerk signals
-  5. Mag: indicates if the signal was calculated using the Euclidean norm.             
-  6. X,Y or Z:  indicates the direction of the signal
-  7. mean, std or meanFreq: mean/standard deviation of the signals measured or the mean frequency of the type of          acceleration measurement
+ 1. t or f:  time(t) or fequency(f) domain signals
+ 2. Body or Gravity:  Body or Gravity acceleration
+ 3. Acc or Gyro:  indicates if the signal is linear(Acc, measured in standard gravity units                                            'g') or angular acceleration(Gyro, measured in radians/second).
+ 4. Jerk: indicates if linerar acceleration and angular velocity were derived in time to                                       obtain Jerk signals
+ 5. Mag: indicates if the signal was calculated using the Euclidean norm.             
+ 6. X,Y or Z:  indicates the direction of the signal
+ 7. mean, std or meanFreq: mean/standard deviation of the signals measured or the mean frequency of the type of          acceleration measurement
     - the types of measurements recorded are listed below:
     - tBodyAcc-mean()-X
     - tBodyAcc-mean()-Y
