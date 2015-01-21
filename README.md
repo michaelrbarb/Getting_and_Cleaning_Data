@@ -19,21 +19,21 @@ have been video-recorded to label the data manually.
 The data was filtered to display only the mean and standard deviations of the acceleration measurements for the test
 and training groups.  The variable name and definitions are as follows:
 
-activity:  What the person was doing at the time of acceleration measurement.  
+- activity:  What the person was doing at the time of acceleration measurement.  
            Activity is one of six choices:
            WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-subject:   The person that was wearing the smartphone at the time of the measurment.  Each person is labled from
+- subject:   The person that was wearing the smartphone at the time of the measurment.  Each person is labled from
            1 to 30.
-type:      The group that the volunteer was assigned to.  Test or Train group.
-variable:  The type of acceleration measured: 
-                  tBodyAcc-mean()-X
-                  tBodyAcc-mean()-Y
-                  tBodyAcc-mean()-Z
-                  tBodyAcc-std()-X
-                  tBodyAcc-std()-Y
-                  tBodyAcc-std()-Z
-                  tGravityAcc-mean()-X
-                  tGravityAcc-mean()-Y
+- type:      The group that the volunteer was assigned to.  Test or Train group.
+- variable:  The type of acceleration measured: 
+                  - tBodyAcc-mean()-X
+                  - tBodyAcc-mean()-Y
+                  - tBodyAcc-mean()-Z
+                  - tBodyAcc-std()-X
+                  - tBodyAcc-std()-Y
+                  - tBodyAcc-std()-Z
+                  - tGravityAcc-mean()-X
+                  - tGravityAcc-mean()-Y
                   tGravityAcc-mean()-Z
                   tGravityAcc-std()-X
                   tGravityAcc-std()-Y
