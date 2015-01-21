@@ -2,11 +2,11 @@
 
 ##What the script does:
 The file run_analysis.R is an R script used to do the following:
-1.  Merges the training and the test sets to create one data set.
-2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
-3.  Uses descriptive activity names to name the activities in the data set
-4.  Appropriately labels the data set with descriptive variable names. 
-5.  From the data set in step 4, creates a second, independent tidy data set with the average 
+- 1.  Merges the training and the test sets to create one data set.
+- 2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
+- 3.  Uses descriptive activity names to name the activities in the data set
+- 4.  Appropriately labels the data set with descriptive variable names. 
+- 5.  From the data set in step 4, creates a second, independent tidy data set with the average 
     of each variable for each activity and each subject.
 
 ##About the data and code book:
@@ -19,10 +19,10 @@ have been video-recorded to label the data manually.
 The data was filtered to display only the mean and standard deviations of the acceleration measurements for the test
 and training groups.  The variable name and definitions are as follows:
 
-- ###activity:  What the person was doing at the time of acceleration measurement.  
+- *activity:  What the person was doing at the time of acceleration measurement.  
            Activity is one of six choices:
            WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-- ###subject:   The person that was wearing the smartphone at the time of the measurment.  Each person is labled from 1 to 30.
+- *subject:   The person that was wearing the smartphone at the time of the measurment.  Each person is labled from 1 to 30.
 - ###type:      The group that the volunteer was assigned to.  Test or Train group.
 - variable:  The type of acceleration measured: 
     - tBodyAcc-mean()-X
