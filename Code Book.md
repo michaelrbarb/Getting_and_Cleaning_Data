@@ -6,15 +6,15 @@
 - type:     The group that the volunteer was assigned to.  Test or Train group.
 - variable: The type of acceleration recoreded.  
             - variable has five parts to describe the specific measurement.  
-                        - t or f:  time(t) or fequency(f) domain signals
-                        - Body or Gravity:  Body or Gravity acceleration
-                        - Acc or Gyro:  indicates if the signal is linear(Acc, measured in standard gravity units                                            'g') or angular acceleration(Gyro, measaured in radians/second).
-                        - Jerk: indicates if linerar acceleration and angular velocity were derived in time to                                       obtain Jerk signals
-                        - Mag: indicates if the signal was calculated using the Euclidean norm.             
-                        - X,Y or Z:  indicates the direction of the signal
-                        - mean: mean of the signals measured
-                        - std:  standard deviation of the signals measured 
-                        - meanFreq:  the mean frequency of the type of acceleration measurement
+            - t or f:  time(t) or fequency(f) domain signals
+            - Body or Gravity:  Body or Gravity acceleration
+            - Acc or Gyro:  indicates if the signal is linear(Acc, measured in standard gravity units                                            'g') or angular acceleration(Gyro, measaured in radians/second).
+            - Jerk: indicates if linerar acceleration and angular velocity were derived in time to                                       obtain Jerk signals
+            - Mag: indicates if the signal was calculated using the Euclidean norm.             
+            - X,Y or Z:  indicates the direction of the signal
+            - mean: mean of the signals measured
+            - std:  standard deviation of the signals measured 
+            - meanFreq:  the mean frequency of the type of acceleration measurement
     - the types of measurements recorded are listed below:
     - tBodyAcc-mean()-X
     - tBodyAcc-mean()-Y
