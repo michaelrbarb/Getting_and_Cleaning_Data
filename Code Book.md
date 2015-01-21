@@ -92,4 +92,4 @@
     - fBodyBodyGyroJerkMag-mean()
     - fBodyBodyGyroJerkMag-std()
     - fBodyBodyGyroJerkMag-meanFreq()
-- average:  The average of each variable by subject and activity.
+- average:  The average of the variable by subject and activity.
