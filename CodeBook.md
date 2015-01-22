@@ -10,7 +10,7 @@ The description of the dataset attributes are listed below.
             One of six choices:WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - subject:  The volunteer that was wearing the smartphone at the time of the measurment.  Each unique volunteer is labled with a numeric value 1 to 30.
 - type:     The group that the volunteer was assigned to.  Test or Train group.
-- accleration variable: The type of acceleration recorded.  The variable can have up to 7 parts to describe the specific measurement.  A total of 79 accleration measurements were recorded and are measured in standard gravity units 'g' or radians/second.  The measurement is explained below:   
+- accleration variable: The type of acceleration recorded.    A total of 79 different types of accleration measurements were recorded.  The variable is measured in standard gravity units 'g' or radians/second.  The variable can have up to 7 parts to describe the specific measurement.  The measurement is explained below:   
  1. t or f:  time(t) or fequency(f) domain signals
  2. Body or Gravity:  Body or Gravity acceleration
  3. Acc or Gyro:  indicates if the signal is linear(Acc, measured in standard gravity units                                            'g') or angular acceleration(Gyro, measured in radians/second).
