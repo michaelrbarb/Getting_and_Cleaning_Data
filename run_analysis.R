@@ -80,7 +80,7 @@ wear_summarized <- wear_master %>% group_by(subject,activity) %>% summarise_each
 rm("wear","wear2")
 
 #Output text file of the summarized data
-write.table(wear_summarized,"run_analysis.txt",row.name=FALSE)
+write.table(wear_summarized,"run_analysis_output.txt",row.name=FALSE)
 
 
 
