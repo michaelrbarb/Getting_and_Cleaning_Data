@@ -1,12 +1,12 @@
-#Don't forget to set the working directory
+#Don't forget to set the working directory and put data folder /UCI Dataset/ in the directory
 
 #Load required libraries
 library(dplyr)
 library(reshape2)
-library(gdata)
+library(DataCombine)
 
 #************************************************TEST DATA*********************************************************************
-#Read in the test set
+#Read in the test set from the UCI HAR Dataset/test folder
 wear<-read.table("./UCI HAR Dataset/test/X_test.txt",sep="",colClasses="numeric")
 
 #TEST COLUMN NAMES
@@ -72,21 +72,18 @@ rm("colnameswear","colnameswear2","type")
 #*********************************************COMBINED DATA******************************************************************
 #Create the dataframe with test and train data
 wear_master<-rbind.data.frame(wear,wear2)
-wear_master<-drop.levels(wear_master)
 
 #Melt (i.e. re-arrange) the dataframe so each observation is a unique activity,subject, type and acceleration measurement
 wear_melted <- melt(wear_master, id.vars=c("subject", "activity","type"))
 #Output dataframe with the average for each variable by subject and activity (wear_summarized)
-wear_summarized <-
-  wear_melted %>%
-  group_by(activity,subject,variable) %>%
-  summarize(average = mean(value))
+wear_summarized <- wear_melted %>% group_by(activity,subject,variable) %>% summarize(average = mean(value))
 
 #Remove dataframes that are not needed
 rm("wear","wear2","wear_master")
 
 #Output text file of the summarized data
-write.table(wear_summarized,"/Users/michaelrbarb/Desktop/Cleaning Data/run_analysis.txt",row.name=FALSE)
+write.table(wear_summarized,"run_analysis.txt",row.name=FALSE)
+
 
 
 
