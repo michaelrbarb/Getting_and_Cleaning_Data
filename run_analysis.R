@@ -73,7 +73,7 @@ rm("colnameswear","colnameswear2","type")
 #Create the dataframe with test and train data
 wear_master<-rbind.data.frame(wear,wear2)
 
-#Output dataframe with the average for each variable by subject and activity (wear_summarized)
+#Output dataframe with the average for each acceleration variable by subject and activity (wear_summarized)
 wear_summarized <- wear_master %>% group_by(subject,activity) %>% summarise_each(funs(mean),matches("mean"),matches("std"))
 
 #Remove dataframes that are not needed
