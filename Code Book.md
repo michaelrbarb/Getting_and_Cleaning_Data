@@ -98,5 +98,6 @@ The description of the dataset attributes are listed below.
     - fBodyBodyGyroJerkMag-mean()
     - fBodyBodyGyroJerkMag-std()
     - fBodyBodyGyroJerkMag-meanFreq()
-- average:  The average of the variable by subject and activity.
-- value:  The value of the acceleration measurement.
+- value:  The value of the acceleration measurment.
+- average:  The average of the variable aggregated by subject and activity.
+
