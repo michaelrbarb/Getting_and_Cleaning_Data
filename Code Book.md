@@ -1,4 +1,11 @@
 ##Code book
+The code generates two datasets and outputs one text file:
+1. wear_melted:  Contains accleration measurments from subjects wearing the Samsung Galaxy S II phone.  The attributes include:  activity, subject, type, variable, and value.
+2. wear_summarized:  Contains accleration/frequency averages aggreagated by subject and activity.
+3. run_analysis.txt:  A text file output of the wear_summarized dataset.
+
+The description of the dataset attributes are listed below.
+
 - activity: What the person was doing at the time of acceleration measurement.  
             One of six choices:WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - subject:  The person that was wearing the smartphone at the time of the measurment.  
@@ -93,3 +100,4 @@
     - fBodyBodyGyroJerkMag-std()
     - fBodyBodyGyroJerkMag-meanFreq()
 - average:  The average of the variable by subject and activity.
+- value:  The value of the acceleration/frequency measurement.
