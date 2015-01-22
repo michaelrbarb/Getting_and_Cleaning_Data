@@ -18,8 +18,8 @@ colnameswear2<-as.character(colnameswear[,2])
 colnames(wear)=colnameswear2
 
 #FILTER THE TEST DATA
-#Select only the data that contains averages and standard deviations
-wear_test<-wear[,c(1:6,41:46,81:86,121:126,161:166,201:202,214:215,227:228,240:241,253:254,266:271,294:296,345:350,373:375,424:429,452:454,503:504,513,516:517,526,529:530,539,542:543,552)]
+#Select only the data that contains mean and standard deviation
+wear_test<-select(wear,contains("mean"), contains("std"))
 #Read in the test subject data
 wearsubject<-read.table("./UCI HAR Dataset/test/subject_test.txt",col.name=c("subject"))
 
@@ -48,8 +48,8 @@ wear2<-read.table("./UCI HAR Dataset/train/X_train.txt",sep="")
 colnames(wear2)<-colnameswear2
 
 #FILTER THE TRAIN DATA
-#Select only the data that contains averages and standard deviations
-wear2_train<-wear2[,c(1:6,41:46,81:86,121:126,161:166,201:202,214:215,227:228,240:241,253:254,266:271,294:296,345:350,373:375,424:429,452:454,503:504,513,516:517,526,529:530,539,542:543,552)]
+#Select only the data that contains mean and standard deviation
+wear2<-select(wear2,contains("mean"), contains("std"))
 #Read in the train subject data
 wear2subject<-read.table("./UCI HAR Dataset/train/subject_train.txt",col.name=c("subject"))
 
@@ -73,16 +73,16 @@ rm("colnameswear","colnameswear2","type")
 #Create the dataframe with test and train data
 wear_master<-rbind.data.frame(wear,wear2)
 
-#Melt (i.e. re-arrange) the dataframe so each observation is a unique activity,subject, type and acceleration measurement
-wear_melted <- melt(wear_master, id.vars=c("subject", "activity","type"))
 #Output dataframe with the average for each variable by subject and activity (wear_summarized)
-wear_summarized <- wear_melted %>% group_by(activity,subject,variable) %>% summarize(average = mean(value))
+wear_summarized <- wear_master %>% group_by(subject,activity) %>% summarise_each(funs(mean),matches("mean"),matches("std"))
 
 #Remove dataframes that are not needed
-rm("wear","wear2","wear_master")
+rm("wear","wear2")
 
 #Output text file of the summarized data
 write.table(wear_summarized,"run_analysis.txt",row.name=FALSE)
+
+
 
 
 
