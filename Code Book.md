@@ -8,8 +8,7 @@ The description of the dataset attributes are listed below.
 
 - activity: What the person was doing at the time of acceleration measurement.  
             One of six choices:WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-- subject:  The person that was wearing the smartphone at the time of the measurment.  
-            Each person is labled from 1 to 30.
+- subject:  The volunteer that was wearing the smartphone at the time of the measurment.  Each unique volunteer is labled with a numeric value 1 to 30.
 - type:     The group that the volunteer was assigned to.  Test or Train group.
 - variable: The type of acceleration recorded.  The variable can have up to 7 parts to describe the specific measurement.  
  1. t or f:  time(t) or fequency(f) domain signals
